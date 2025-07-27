@@ -1,0 +1,128 @@
+/* Product Details */
+// .product-row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin-right: -4px;
+//   margin-left: -4px;
+// }
+
+// .product-col {
+//   width: calc(100% / 12 * 6);
+//   padding-left: 4px;
+//   padding-right: 4px;
+// }
+
+// @media screen and (max-width: 576px) {
+//   .product-col-sm {
+//     width: calc(100% / 12 * 12);
+//   }
+// }
+
+// 產品圖片
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+
+  .product-col {
+    width: calc(100% / 12 * 6);
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .product-col-sm {
+      width: calc(100% + 24px);
+      margin-left: -12px;
+      margin-right: -12px;
+    }
+  }
+}
+
+// 產品價格(原價)
+.del-price {
+  color: $neutral-500;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 8px;
+}
+
+// 產品顏色(顏色選擇)
+.product-color {
+  width: 64px;
+  text-align: center;
+  color: $neutral-600;
+}
+
+// 產品尺寸(尺寸選擇)
+// .btn-product-size {
+//   border: 1px solid $neutral-300;
+//   width: 160px;
+// }
+
+// .btn-product-size.active,
+// .btn-product-size:hover {
+//   border: 1px solid $neutral-900;
+// }
+
+.btn-product-size{
+  border: 1px solid $neutral-300;
+  width: 160px;
+
+  &.active,
+  &:hover {
+    border: 1px solid $neutral-900;
+  }
+}
+
+// .product-action {
+//   display: flex;
+//   gap: 8px;
+// }
+
+// .product-action .btn {
+//   width: 50%;
+// }
+
+// .product-action .bi {
+//   padding-right: 8px;
+// }
+
+.product-action{
+  display: flex;
+  gap: 8px;
+
+  .btn {
+    width: 50%;
+  }
+
+  .bi {
+    padding-right: 8px;
+  }
+}
+
+// 產品描述
+// .product-info-title {
+//   font-weight: 500;
+// }
+
+// .product-info p {
+//   color: $neutral-600;
+// }
+
+// .product-info {
+//   border-bottom: 1px solid $neutral-300;
+// }
+
+.product-info{
+  border-bottom: 1px solid $neutral-300;
+
+  &-title {
+    font-weight: 500;
+  }
+
+  p{
+    color: $neutral-600;
+  }
+}

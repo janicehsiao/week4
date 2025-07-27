@@ -1,0 +1,45 @@
+.header {
+  background-image: url("../images/hero.png");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  color: $neutral-0;
+  text-align: center;
+}
+
+.brand-story-highlight {
+  text-align: center;
+  border-radius: 4px;
+}
+
+.brand-story-border {
+  padding-bottom: 48px;
+  border-bottom: 1px solid $neutral-300;
+
+  @media screen and (max-width: 576px) {
+    padding-bottom: 32px;
+  }
+
+  &-left {
+    border-left: 3px solid $neutral-300;
+    padding-left: 10px;
+  }
+
+  a {
+    color: $primary-400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// .brand-story-border-left {
+//   border-left: 3px solid $neutral-300;
+//   padding-left: 10px;
+// }
+
+.bi {
+  margin-right: 8px;
+}

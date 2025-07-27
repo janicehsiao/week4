@@ -1,0 +1,18 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  margin: 0 12px;
+  color: $neutral-300;
+  font-weight: 700;
+}
+
+.breadcrumb-item {
+  display: flex;
+  font-weight: 500;
+  a:hover {
+    color: $neutral-800;
+  }
+}
+
+.breadcrumb-link {
+  color: $neutral-600;
+}

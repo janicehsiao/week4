@@ -1,0 +1,20 @@
+.btn{
+  border-radius: 4px;
+  padding: 12px 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  cursor: pointer; /* 鼠標懸停時變為手型 */
+  border: none; /* 移除預設邊框 */
+  background-color: transparent; /* 背景透明 */
+}
+
+.btn-dark{
+  background: $neutral-900;
+  color: $neutral-0;
+  padding: 12px 24px;
+}
+
+.btn-light{
+  border: 1px solid $neutral-900;
+}

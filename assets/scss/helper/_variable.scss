@@ -1,0 +1,45 @@
+// 這是純 SCSS 寫法，不要包在 :root 裡
+$primary-100: #F5FEE7;
+$primary-200: #E8FEC5;
+$primary-300: #C0FA73;
+$primary-400: #57A203;
+$primary-500: #477A11;
+
+$neutral-0: #FFFFFF;
+$neutral-100: #F8F9FA;
+$neutral-200: #E9ECEF;
+$neutral-300: #DEE2E6;
+$neutral-400: #CED4DA;
+$neutral-500: #ADB5BD;
+$neutral-600: #6C757D;
+$neutral-700: #495057;
+$neutral-800: #343A40;
+$neutral-900: #212529;
+
+$danger-300: #D74F4F;
+
+// 類別樣式（這部分保留不變）
+.text-white {
+  color: $neutral-0;
+}
+.text-black {
+  color: $neutral-900;
+}
+.text-primary-400 {
+  color: $primary-400;
+}
+.text-neutral-600 {
+  color: $neutral-600;
+}
+.text-danger-300 {
+  color: $danger-300;
+}
+.bg-primary-100 {
+  background-color: $primary-100;
+}
+.bg-primary-200 {
+  background-color: $primary-200;
+}
+.bg-neutral-100 {
+  background-color: $neutral-100;
+}
