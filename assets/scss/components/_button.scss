@@ -18,3 +18,9 @@
 .btn-light{
   border: 1px solid $neutral-900;
 }
+
+.btn-primary{
+  background: $primary-300;
+  color: $neutral-900;
+  padding: 12px 24px;
+}

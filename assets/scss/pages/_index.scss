@@ -1,3 +1,11 @@
-.index-title {
-  font-size: 100px;
+.home-header{
+  background: url(../images/banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  height: 800px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 200px;
 }
