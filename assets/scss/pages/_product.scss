@@ -33,9 +33,9 @@
 
   @media screen and (max-width: 576px) {
     .product-col-sm {
-      width: calc(100% + 24px);
-      margin-left: -12px;
-      margin-right: -12px;
+      width: calc(100%);
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 }

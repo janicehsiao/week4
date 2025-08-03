@@ -13,14 +13,28 @@
   background: $neutral-900;
   color: $neutral-0;
   padding: 12px 24px;
+
+  &:hover{
+    background: rgba($neutral-900, 0.8);
+  }
 }
 
 .btn-light{
   border: 1px solid $neutral-900;
+
+  &:hover{
+    background: $neutral-900;
+    color: $neutral-0;
+  }
 }
 
 .btn-primary{
   background: $primary-300;
   color: $neutral-900;
   padding: 12px 24px;
+  transition: background 0.3s ease; /* 添加過渡效果 */
+
+  &:hover{
+    background: rgba($primary-300, 0.8); /* 添加懸停效果(透明) */
+  }
 }
