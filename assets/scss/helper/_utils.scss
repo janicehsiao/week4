@@ -1,14 +1,9 @@
-// bootstrap gutter-x 設定
-.row.gx-custom {
-  --bs-gutter-x: 24px; // 桌機用 24px
-
-  @media (max-width: 576px) {
-    --bs-gutter-x: 12px; // 手機改為 12px
-  }
-}
-
 .df-flex {
   display: flex;
+}
+
+.d-block{
+  display: block;
 }
 
 .d-none {
@@ -35,9 +30,17 @@
   text-align: center;
 }
 
+.position-relative {
+  position: relative;
+}
+
 @media screen and (max-width: 576px) {
-  .df-flex.d-sm-block {
-    display: block;
+  // .df-flex.d-sm-block {
+  //   display: block;
+  // }
+
+  .df-sm-flex {
+    display: flex;
   }
 
   .d-sm-none {
@@ -50,6 +53,15 @@
 
   .align-sm-start {
     align-items: flex-start;
+  }
+
+  .flex-sm-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  // 超出寬度時自動顯示滾動條
+  .overflow-x-sm-auto {
+    overflow-x: auto;
   }
 }
 
@@ -88,7 +100,17 @@
   padding-bottom: 8px;
 }
 
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 @media screen and (max-width: 576px) {
+  .py-sm-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
   .py-sm-32 {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -112,7 +134,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-  
+
   .px-sm-12 {
     padding-left: 12px;
     padding-right: 12px;
@@ -180,6 +202,27 @@
   margin-bottom: 4px;
 }
 
+@media screen and (max-width: 768px) {
+  .mb-md-32 {
+    margin-bottom: 32px;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
+  .mb-md-16 {
+    margin-bottom: 16px;
+  }
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+  .mb-md-8 {
+    margin-bottom: 8px;
+  }
+  .mb-md-4 {
+    margin-bottom: 4px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .mb-sm-32 {
     margin-bottom: 32px;
@@ -203,6 +246,10 @@
 
 .gap-8 {
   gap: 8px;
+}
+
+.gap-4 {
+  gap: 4px;
 }
 
 .ol-disc {
