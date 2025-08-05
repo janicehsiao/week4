@@ -66,7 +66,7 @@
 //   border: 1px solid $neutral-900;
 // }
 
-.btn-product-size{
+.btn-product-size {
   border: 1px solid $neutral-300;
   width: 160px;
 
@@ -89,7 +89,7 @@
 //   padding-right: 8px;
 // }
 
-.product-action{
+.product-action {
   display: flex;
   gap: 8px;
 
@@ -99,6 +99,41 @@
 
   .bi {
     padding-right: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .product-action {
+    flex-direction: row-reverse;
+
+    .btn {
+      width: auto;
+    }
+
+    .btn-booking {
+      flex: 1;
+    }
+
+    .btn-fav {
+      all: unset;
+      display: inline-block;
+      font-size: 24px;
+      cursor: pointer;
+      margin: 0;
+      padding: 12px;
+      background: none;
+      border: none;
+
+      span {
+        display: none;
+      }
+
+      .bi {
+        padding: 0;
+        margin: 0;
+        vertical-align: middle; // 讓 icon 在文字 baseline 垂直置中
+      }
+    }
   }
 }
 
@@ -115,14 +150,29 @@
 //   border-bottom: 1px solid $neutral-300;
 // }
 
-.product-info{
+.product-info {
   border-bottom: 1px solid $neutral-300;
 
   &-title {
     font-weight: 500;
   }
 
-  p{
+  p {
     color: $neutral-600;
+  }
+}
+
+@media (max-width: 576px) {
+  .relative-product {
+    .relative-product-sm-row {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+
+    .relative-product-sm-col{
+      padding-left: 8px;
+      padding-right: 8px;
+      min-width: 300px;
+    }
   }
 }
