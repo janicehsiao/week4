@@ -9,8 +9,8 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
     <title>產品詳情頁</title>
-    <script type="module" crossorigin src="/week4/assets/main-CN8eOV4r.js"></script>
-    <link rel="stylesheet" crossorigin href="/week4/assets/main-DRaoJ4pA.css">
+    <script type="module" crossorigin src="/week4/assets/main-yBs_cLXw.js"></script>
+    <link rel="stylesheet" crossorigin href="/week4/assets/main-C5v_Zyxv.css">
   </head>
   <body>
     <header class="container py-16 df-flex align-center justify-between">
@@ -87,7 +87,7 @@
             <!-- 商品名稱 -->
             <h1 class="h2 mb-16">Platform 404</h1>
             <!-- 商品價格 -->
-            <p class="h5 text-primary-400 mb-16">
+            <p class="h5 h6-sm text-primary-400 mb-16">
               NT$2,600<del class="del-price">NT$3,200</del>
             </p>
             <!-- 商品描述 -->
@@ -100,7 +100,7 @@
             </p>
           </div>
           <!-- 產品顏色 -->
-          <div class="mb-32">
+          <div class="mb-32 mb-sm-24">
             <h3 class="mb-8">顏色</h3>
             <div class="df-flex">
               <div class="product-color me-8">
@@ -122,7 +122,7 @@
             </div>
           </div>
           <!-- 產品尺寸 -->
-          <div class="mb-48">
+          <div class="mb-48 mb-sm-24">
             <h3 class="mb-8">尺寸</h3>
             <div class="df-flex flex-wrap gap-8 mb-8">
               <button type="button" class="btn btn-product-size active">
@@ -157,11 +157,15 @@
           </div>
           <!-- 加入購物車按鈕 -->
           <div class="product-action mb-32">
-            <button type="button" class="btn btn-light">
-              <i class="bi bi-heart"></i>加入收藏
+            <button
+              type="button"
+              class="btn btn-light btn-fav"
+              onclick="location.href='favorite.html'"
+            >
+              <i class="bi bi-heart"></i><span>加入收藏</span>
             </button>
-            <button type="button" class="btn btn-dark">
-              <i class="bi bi-handbag"></i>門市預約試穿
+            <button type="button" class="btn btn-dark btn-booking">
+              <i class="bi bi-handbag"></i><span>門市預約試穿</span>
             </button>
           </div>
           <!-- 描述 -->
@@ -194,10 +198,10 @@
       </div>
     </main>
     <!-- 相關產品 -->
-    <div class="container py-48">
-      <h2 class="h4 text-neutral-900 mb-16">你可能也喜歡...</h2>
-      <div class="row">
-        <div class="col-3">
+    <div class="relative-product container py-48 mb-40 mb-sm-24">
+      <h2 class="h4 h5-sm text-neutral-900 mb-16">你可能也喜歡...</h2>
+      <div class="row flex-sm-nowrap overflow-x-sm-auto relative-product-sm-row">
+        <div class="col-3 relative-product-sm-col">
           <a href="product.html"
             ><img
               src="/week4/assets/product-2-B3VzoAng.png"
@@ -209,7 +213,7 @@
           </a>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 relative-product-sm-col">
           <a href="../week2/product.html"
             ><img
               src="/week4/assets/product-3-AxvEbKOW.png"
@@ -221,7 +225,7 @@
           </a>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 relative-product-sm-col">
           <a href="../week2/product.html"
             ><img
               src="/week4/assets/product-4-CqyUCYzf.png"
@@ -233,7 +237,7 @@
           </a>
         </div>
 
-        <div class="col-3">
+        <div class="col-3 relative-product-sm-col">
           <a href="../week2/product.html"
             ><img
               src="/week4/assets/product-7-DJXgZGzn.png"
@@ -246,6 +250,13 @@
         </div>
       </div>
     </div>
+
+    <section class="bg-primary-200">
+  <div class="container df-flex justify-center align-center py-24">
+    <p class="h4 h5-sm me-24 me-16-sm">加入會員取得 9 折優惠</p>
+    <button type="button" class="btn btn-dark">馬上註冊</button>
+  </div>
+</section>
     <footer class="container py-64 py-sm-32">
   <!-- 頁尾內容 -->
   <div
